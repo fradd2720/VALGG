@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_status"
+        android:icon="@drawable/ic_nav_status"
+        android:title="첫번째" />
+    <item
+        android:id="@+id/nav_ranking"
+        android:icon="@drawable/ic_nav_ranking"
+        android:title="두번째" />
+    <item
+        android:id="@+id/nav_agents"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_agents"
+        android:title="세번째" />
+    <item
+        android:id="@+id/nav_contents"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_contents"
+        android:title="네번째" />
+</menu>
