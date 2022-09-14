@@ -26,7 +26,7 @@ class SpaceItemDecoration(context: Context?, dp: Int) : RecyclerView.ItemDecorat
         val end: Int
         when {
             isFirstItem -> {
-                val firstView = (parent.adapter as AgentAdapter).getFirstView()!!
+                val firstView = (parent.adapter as AgentAdapter).getFirstView()
                 val bounds = Rect()
                 val textPaint: Paint = firstView.paint
                 textPaint.getTextBounds(firstView.text, 0, firstView.text.length, bounds)
@@ -35,7 +35,7 @@ class SpaceItemDecoration(context: Context?, dp: Int) : RecyclerView.ItemDecorat
                 end = (space / 2f + 0.5f).toInt()
             }
             isLastItem -> {
-                val lastView = (parent.adapter as AgentAdapter).getLastView()!!
+                val lastView = (parent.adapter as AgentAdapter).getLastView()
                 val bounds = Rect()
                 val textPaint: Paint = lastView.paint
                 textPaint.getTextBounds(lastView.text, 0, lastView.text.length, bounds)
